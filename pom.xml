@@ -6,6 +6,7 @@
     <modules>
         <module>dome-web</module>
         <module>demo-controller</module>
+        <module>demo-bean</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
