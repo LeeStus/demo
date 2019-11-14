@@ -6,9 +6,9 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="demo-controller" />
         <module name="dome-web" />
         <module name="demo-bean" />
+        <module name="demo-controller" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
