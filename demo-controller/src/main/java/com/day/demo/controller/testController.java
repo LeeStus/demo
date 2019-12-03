@@ -22,6 +22,8 @@ public class testController {
     @PostMapping("/test")
     public String test(){
 
+
+
         log.info("日志记录");
         return "Dispatch servlet";
     }

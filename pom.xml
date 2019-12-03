@@ -6,8 +6,6 @@
     <modules>
         <module>dome-web</module>
         <module>demo-controller</module>
-        <module>demo-service</module>
-        <module>demo-dao</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -21,7 +19,7 @@
     <name>demo</name>
     <description>Demo project for Spring Boot</description>
 
-    <!-- 版本控制 -->
+    <!--版本控制 -->
     <properties>
         <java.version>1.8</java.version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
