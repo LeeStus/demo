@@ -6,15 +6,19 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="dome-web" />
-        <module name="demo-bean" />
         <module name="demo-controller" />
+        <module name="dome-web" />
+        <module name="demo-service" />
+        <module name="demo-bean" />
+        <module name="demo-dao" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="demo" target="1.8" />
       <module name="demo-bean" target="1.8" />
       <module name="demo-controller" target="1.8" />
+      <module name="demo-dao" target="1.8" />
+      <module name="demo-service" target="1.8" />
       <module name="dome-web" target="1.8" />
     </bytecodeTargetLevel>
   </component>
@@ -23,6 +27,8 @@
       <module name="demo" options="-parameters" />
       <module name="demo-bean" options="-parameters" />
       <module name="demo-controller" options="-parameters" />
+      <module name="demo-dao" options="-parameters" />
+      <module name="demo-service" options="-parameters" />
       <module name="dome-web" options="-parameters" />
     </option>
   </component>
