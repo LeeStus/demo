@@ -10,7 +10,6 @@
         <module>demo-dao</module>
         <module>demo-common</module>
         <module>demo-Utils</module>
-        <module>demo-eureka</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>

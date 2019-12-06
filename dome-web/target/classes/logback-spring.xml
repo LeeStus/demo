@@ -4,12 +4,11 @@
     <property name="PATTERN" value="%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n"/>
 
     <!-- log文件路径 -->
-    <property name="DEV_FILE_PATH" value="D:\demo\logs" />
+    <property name="DEV_FILE_PATH" value="D:/demo/logs" />
 
 
     <logger name="org.springframework.web" level="INFO"/>
     <logger name="org.springboot.sample" level="TRACE" />
-    <logger name="com.day.demo.controller" level="INFO"/>
 
     <!-- dev -->
     <springProfile name="dev">
