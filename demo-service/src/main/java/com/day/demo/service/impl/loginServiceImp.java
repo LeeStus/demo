@@ -1,7 +1,7 @@
-package com.day.demo.impl;
+package com.day.demo.service.impl;
 
 import com.day.demo.dao.loginDAO;
-import com.day.demo.loginService;
+import com.day.demo.service.loginService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

@@ -1,4 +1,4 @@
-package com.day.demo;
+package com.day.demo.service;
 
 import java.util.List;
 

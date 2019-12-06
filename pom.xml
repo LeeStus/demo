@@ -8,6 +8,9 @@
         <module>demo-controller</module>
         <module>demo-service</module>
         <module>demo-dao</module>
+        <module>demo-common</module>
+        <module>demo-Utils</module>
+        <module>demo-eureka</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -76,6 +79,11 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-orm</artifactId>
+        </dependency>
+        <!--redis-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
     </dependencies>
 
