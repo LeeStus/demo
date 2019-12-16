@@ -10,6 +10,7 @@
         <module>demo-dao</module>
         <module>demo-common</module>
         <module>demo-Utils</module>
+        <module>demo-object</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -25,11 +26,14 @@
 
     <!--版本控制 -->
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
         <mybatis-plus.version>3.1.0</mybatis-plus.version>
         <drui.version>1.1.10</drui.version>
+        <shiro.version>1.4.0</shiro.version>
+        <lombok.version>1.18.8</lombok.version>
     </properties>
-
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -53,6 +57,11 @@
             <artifactId>mybatis-plus-boot-starter</artifactId>
             <version>${mybatis-plus.version}</version>
         </dependency>
+<!--        <dependency>
+            <groupId>org.mybatis.spring.boot</groupId>
+            <artifactId>mybatis-spring-boot-starter</artifactId>
+            <version>2.1.0</version>
+        </dependency>-->
         <!--test-->
         <dependency>
             <groupId>junit</groupId>
@@ -84,8 +93,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-data-redis</artifactId>
         </dependency>
+        <!--shiro-->
+        <dependency>
+            <groupId>org.apache.shiro</groupId>
+            <artifactId>shiro-spring</artifactId>
+            <version>${shiro.version}</version>
+        </dependency>
+        <!--lombok-->
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+            <version>${lombok.version}</version>
+            <scope>provided</scope>
+        </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>

@@ -6,6 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="demo-eureka-7001" />
         <module name="demo-service" />
         <module name="dome-web" />
         <module name="demo-common" />
@@ -13,6 +14,7 @@
         <module name="demo-controller" />
         <module name="demo-Utils" />
         <module name="demo-dao" />
+        <module name="demo-object" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
@@ -21,6 +23,10 @@
       <module name="demo-common" target="1.8" />
       <module name="demo-controller" target="1.8" />
       <module name="demo-dao" target="1.8" />
+      <module name="demo-eureka" target="1.8" />
+      <module name="demo-eureka-7001" target="1.8" />
+      <module name="demo-eurekas" target="1.8" />
+      <module name="demo-object" target="1.8" />
       <module name="demo-service" target="1.8" />
       <module name="demo-Utils" target="1.8" />
       <module name="dome-web" target="1.8" />
@@ -34,6 +40,10 @@
       <module name="demo-common" options="-parameters" />
       <module name="demo-controller" options="-parameters" />
       <module name="demo-dao" options="-parameters" />
+      <module name="demo-eureka" options="-parameters" />
+      <module name="demo-eureka-7001" options="-parameters" />
+      <module name="demo-eurekas" options="-parameters" />
+      <module name="demo-object" options="-parameters" />
       <module name="demo-service" options="-parameters" />
       <module name="dome-web" options="-parameters" />
     </option>

@@ -4,7 +4,7 @@
     <property name="PATTERN" value="%-12(%d{yyyy-MM-dd HH:mm:ss.SSS}) |-%-5level [%thread] %c [%L] -| %msg%n"/>
 
     <!-- log文件路径 -->
-    <property name="DEV_FILE_PATH" value="D:/demo/logs" />
+    <property name="log.path" value="./logs" />
 
 
     <logger name="org.springframework.web" level="INFO"/>
@@ -15,10 +15,10 @@
         <!-- 每天产生一个文件 -->
         <appender name="DEV-FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
             <!-- 文件路径 -->
-            <file>${DEV_FILE_PATH}</file>
+            <file>${log.path}/dev.log</file>
             <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
                 <!-- 文件名称 -->
-                <fileNamePattern>${DEV_FILE_PATH}/info.%d{yyyy-MM-dd}.log</fileNamePattern>
+                <fileNamePattern>${log.path}/info.%d{yyyy-MM-dd}.log</fileNamePattern>
                 <!-- 文件最大保存历史数量 -->
                 <MaxHistory>100</MaxHistory>
             </rollingPolicy>

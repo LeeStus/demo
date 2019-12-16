@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- Mapper -->
+<mapper namespace="com.day.demo.dao.LoginMapper">
+
+    <resultMap id="loginMap" type="com.day.demo.object.LoginDTO">
+        <result column="id" property="id" jdbcType="VARCHAR"/>
+        <result column="user_name" property="userName" jdbcType="VARCHAR"/>
+        <result column="user_password" property="userPassword" jdbcType="VARCHAR"/>
+        <result column="create_user" property="createUser" jdbcType="VARCHAR"/>
+        <result column="create_date" property="createDate" jdbcType="VARCHAR"/>
+        <result column="last_update_user" property="lastUpdateUser" jdbcType="VARCHAR"/>
+        <result column="last_update_date" property="lastUpdateDate" jdbcType="VARCHAR"/>
+    </resultMap>
+
+    <select id="queryLogin" resultMap="loginMap">
+        select id from demo_user_t
+        <trim prefix="where" prefixOverrides="and">
+            <if test="null != userName">
+                user_name = #{userName,jdbcType="VARCHAR"}
+            </if>
+            <if test="null != userPassword">
+                and user_password = #{userPassword,jdbcType="VARCHAR"}
+            </if>
+        </trim>
+    </select>
+
+    <select id="listAll" resultMap="loginMap">
+        select * from demo_user_t
+    </select>
+</mapper>

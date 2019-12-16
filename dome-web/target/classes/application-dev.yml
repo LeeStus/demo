@@ -25,7 +25,7 @@ spring:
             testWhileIdle: true
             timeBetweenEvictionRunsMillis: 60000
             validationQuery: SELECT 1 FROM DUAL
-      url: jdbc:mysql://10.187.63.166:3306/demo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
+      url: jdbc:mysql://10.187.60.206:3306/demo?serverTimezone=GMT%2B8&useUnicode=true&characterEncoding=utf-8
       username: root
       password: liwenbin21
   redis:
