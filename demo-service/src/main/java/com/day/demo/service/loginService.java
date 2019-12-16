@@ -16,7 +16,7 @@ public interface loginService {
      * @param jsonContext json format context
      * @return Result<XxxxDO>
      */
-    public ResultDTO<LoginDTO> queryLogin(LoginDTO LoginDTO);
+    public ResultDTO<LoginDTO> selectList(LoginDTO LoginDTO);
 
     public ResultDTO<LoginDTO> listALl();
 

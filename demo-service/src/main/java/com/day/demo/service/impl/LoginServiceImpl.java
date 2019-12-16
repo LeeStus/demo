@@ -45,10 +45,11 @@ public class LoginServiceImpl implements loginService {
    private LoginMapper dao;
 
     @Override
-    public ResultDTO<LoginDTO> queryLogin(LoginDTO loginDTO) {
+    public ResultDTO<LoginDTO> selectList(LoginDTO loginDTO) {
         ResultDTO<LoginDTO> resultDTO = new ResultDTO<LoginDTO>();
 
-        QueryWrapper<LoginDTO> queryWrapper = new QueryWrapper<LoginDTO>(loginDTO);
+        QueryWrapper<LoginDTO> queryWrapper = new QueryWrapper<LoginDTO>();
+        queryWrapper.lambda().eq(LoginDTO::getUserName,loginDTO.getUserName()).and(queryWrapper1 -> queryWrapper1.eq(LoginDTO::getUserPassword,loginDTO.getUserPassword()));
 
         try{
             List<LoginDTO> resultDTOs = dao.selectList(queryWrapper);

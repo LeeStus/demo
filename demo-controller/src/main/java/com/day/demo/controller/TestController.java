@@ -10,12 +10,14 @@ import com.sun.org.apache.bcel.internal.classfile.ConstantClass;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.util.MultiValueMap;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * @project_name：
@@ -33,9 +35,10 @@ public class TestController {
     @Autowired
     private loginService service;
 
-    @PostMapping("/queryLogin")
-    public ResultDTO<LoginDTO> queryLogin (@RequestBody LoginDTO loginDTO){
-        ResultDTO<LoginDTO> resultDTO = service.queryLogin(loginDTO);
+    @PostMapping("/selectList")
+    public ResultDTO<LoginDTO> selectList (@RequestBody LoginDTO loginDTO){
+
+        ResultDTO<LoginDTO> resultDTO = service.selectList(loginDTO);
         log.info(">>>>>>>>>>-------------"+loginDTO);
         return resultDTO;
     }
