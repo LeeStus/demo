@@ -20,17 +20,17 @@ import java.io.Serializable;
 @Configuration
 public class RedisConfig {
 
-    @Bean
+    @Bean("RedisTemplate")
     public RedisTemplate<Serializable, Object> restTemplate(RedisConnectionFactory connectionFactory){
 
-        RedisTemplate<Serializable,Object> template = new RedisTemplate<Serializable,Object>();
-        template.setConnectionFactory(connectionFactory);
-        template.afterPropertiesSet();
+        RedisTemplate<Serializable,Object> redisTemplate = new RedisTemplate<Serializable,Object>();
+        redisTemplate.setConnectionFactory(connectionFactory);
+        redisTemplate.afterPropertiesSet();
         //redis存取对象的关键配置
-        template.setKeySerializer(new StringRedisSerializer());
+        redisTemplate.setKeySerializer(new StringRedisSerializer());
         //ObjectRedisSerializer类为Java对象的序列化和反序列化工具类
-        template.setValueSerializer(new ObjectRedisSerializerUtil());
+        redisTemplate.setValueSerializer(new ObjectRedisSerializerUtil());
 
-        return template;
+        return redisTemplate;
     }
 }
