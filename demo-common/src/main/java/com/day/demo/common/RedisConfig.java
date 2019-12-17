@@ -20,8 +20,8 @@ import java.io.Serializable;
 @Configuration
 public class RedisConfig {
 
-    @Bean("RedisTemplate")
-    public RedisTemplate<Serializable, Object> restTemplate(RedisConnectionFactory connectionFactory){
+    @Bean
+    public RedisTemplate<Serializable, Object> redisTemplate(RedisConnectionFactory connectionFactory){
 
         RedisTemplate<Serializable,Object> redisTemplate = new RedisTemplate<Serializable,Object>();
         redisTemplate.setConnectionFactory(connectionFactory);
