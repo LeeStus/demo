@@ -1,6 +1,7 @@
 package com.day.demo.object;
 
 import lombok.Data;
+import lombok.Value;
 
 import java.util.List;
 
