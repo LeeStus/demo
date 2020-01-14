@@ -93,7 +93,7 @@ public class ApiServiceImpl implements ApiService {
         //apikey授权
         HttpHeaders headers = new HttpHeaders();
         headers.setContentType(MediaType.APPLICATION_JSON);
-        headers.add("apikey", "tM5o6PwsehSYsoqx3dDgTK33sPM87Ev3");
+        headers.add("apikey", "");
 
         HttpEntity<String> httpEntity = new HttpEntity<>(null, headers);
         try {

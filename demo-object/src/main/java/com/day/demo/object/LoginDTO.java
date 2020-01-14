@@ -1,9 +1,6 @@
 package com.day.demo.object;
 
 import com.baomidou.mybatisplus.annotation.TableName;
-import com.baomidou.mybatisplus.core.conditions.Wrapper;
-import com.baomidou.mybatisplus.core.conditions.segments.MergeSegments;
-import io.lettuce.core.dynamic.annotation.Value;
 import lombok.Data;
 
 import java.util.Date;
