@@ -1,6 +1,10 @@
-package com.day.demo.object;;
+package com.day.demo.object;
 
-import javax.persistence.*;
+import javax.persistence.Id;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Entity;
+import javax.persistence.Table;
 
 @Entity
 @Table(name = "teacher")

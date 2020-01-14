@@ -12,3 +12,7 @@
 *.rar
 *.iml
 /*/bin
+*.classpath
+.settings
+*/target
+.project
