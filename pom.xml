@@ -12,7 +12,7 @@
         <module>demo-Utils</module>
         <module>demo-object</module>
         <module>demo-api</module>
-        <module>core</module>
+        <module>demo-core</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
@@ -49,7 +49,7 @@
             <dependency>
                 <groupId>com.alibaba.cloud</groupId>
                 <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${nacos-version}</version>
+                <version>${alicloud-version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
