@@ -6,18 +6,12 @@ import org.apache.shiro.authz.AuthorizationInfo;
 import org.apache.shiro.authz.SimpleAuthorizationInfo;
 import org.apache.shiro.realm.AuthorizingRealm;
 import org.apache.shiro.subject.PrincipalCollection;
-import org.apache.shiro.util.ByteSource;
-import org.springframework.context.annotation.Bean;
-import org.springframework.context.annotation.Configuration;
-import org.springframework.stereotype.Component;
 
 import java.util.HashSet;
 import java.util.Set;
 
 /**
- * 描述：
- *
- * @author caojing
+ * @author liwenbin
  * @create 2019-01-27-13:57
  */
 public class CustomRealm extends AuthorizingRealm {
@@ -35,8 +29,7 @@ public class CustomRealm extends AuthorizingRealm {
 
     /**
      * 这里可以注入userService,为了方便演示，我就写死了帐号了密码
-     * private UserService userService;
-     * <p>
+     * private UserService userService
      * 获取即将需要认证的信息
      */
     @Override

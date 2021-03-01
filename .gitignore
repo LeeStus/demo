@@ -16,3 +16,4 @@
 .settings
 */target
 .project
+/target/*

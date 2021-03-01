@@ -62,7 +62,7 @@ public class ApiServiceImpl implements ApiService {
     public ResultDTO<String> happinessLimit(ApiDTO apiDTO) throws CustomizeException {
         ResultDTO<String> resultDTO = new ResultDTO<String>();
 
-        String getUrl = "http://opentest-api.bgy.com.cn/env-101/por-6403/ehr/ehp/happinesslimit";
+        String getUrl = "http://*******8/happinesslimit";
         String employeeName = apiDTO.getEmployeeName();
         String employeeTelPhone = apiDTO.getEmployeeTelPhone();
         String employeeBiNo = apiDTO.getEmployeeBipNo();

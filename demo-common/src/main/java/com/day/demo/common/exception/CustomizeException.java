@@ -3,8 +3,7 @@ package com.day.demo.common.exception;
 import lombok.Data;
 
 /**
- * @project_name：outsideMeetingManagement-common
- * @classname：BGYException
+ * @classname：Exception
  * @description: 自定义异常类
  * @author: leewebi-n
  * @version: 1.0

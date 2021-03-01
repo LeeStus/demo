@@ -1,4 +1,4 @@
-package com.day.demo.controller.test;
+package com.day.demo.controller;
 
 import com.day.demo.service.redisTestService;
 import org.springframework.beans.factory.annotation.Autowired;
