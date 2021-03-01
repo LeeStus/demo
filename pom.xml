@@ -12,7 +12,7 @@
         <module>demo-Utils</module>
         <module>demo-object</module>
         <module>demo-api</module>
-        <module>core</module>
+        <module>demo-core</module>
     </modules>
     <parent>
         <groupId>org.springframework.boot</groupId>
