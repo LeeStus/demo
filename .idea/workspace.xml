@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="83a5c558-be6f-4651-ba8f-efd92195f52a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/database/db.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-core/src/main/java/user/UserIntercept.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-dao/target/classes/mapper/LoginMapper.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo-object/target/classes/META-INF/demo-object.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-    </list>
+    <list default="true" id="83a5c558-be6f-4651-ba8f-efd92195f52a" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -51,12 +42,12 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/demo-dao/src/main/java/com/day/demo/dao/LoginMapper.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/demo-common/src/main/java/com/day/demo/common/ApiConfig.java" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/demo-common/src/main/java/com/day/demo/common/RedisConfig.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/demo-controller/src/main/java/com/day/demo/controller/ApiCtroller.java" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/demo-object/src/main/java/com/day/demo/object/HibernateDTO.java" root0="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/demo-controller/src/main/java/com/day/demo/controller/RedisTestController.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/demo-object/src/main/java/com/day/demo/object/HibernateDTO.java" root0="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/demo-common/src/main/java/com/day/demo/common/ApiConfig.java" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/demo-dao/src/main/java/com/day/demo/dao/LoginMapper.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MavenImportPreferences">
     <option name="generalSettings">
